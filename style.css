@@ -45,3 +45,15 @@ p{
   div#navbarColor01 {
     display: block !important;
 }
+
+.list-group-item {
+    background: none !important;
+    position: relative;
+    display: block;
+    padding: .5rem 1rem .5rem 0;
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #424242;
+}
