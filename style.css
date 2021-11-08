@@ -1,0 +1,47 @@
+.hero{
+    padding-top: 100px;
+}
+
+.h1, h1 {
+    font-size: 80px;
+    color: #666;
+}
+
+.h4, h4 {
+    font-size: 24px;
+    color:#999
+}
+
+body {
+    background: #000;
+    color: rgb(199, 199, 199);
+}
+.h1, h1 {
+    font-size: 80px;
+    color: #666;
+}
+.h2, h2 {
+    font-size: 60px !important;
+}
+p{
+    color: #999;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #222;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.85rem;
+}
+
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+  }
+  div#navbarColor01 {
+    display: block !important;
+}
