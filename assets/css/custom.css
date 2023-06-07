@@ -8,6 +8,10 @@ html {
 /*    transform: scale(1.05);*/
 /*}*/
 
+p.dark\:text-grey {
+    color: #c5c5c5;
+}
+
 .about-box {
     padding: 0.8rem;
 }
