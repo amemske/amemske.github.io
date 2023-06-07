@@ -4,6 +4,9 @@ html {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+/*.box-container:hover{*/
+/*    transform: scale(1.05);*/
+/*}*/
 
 .about-box {
     padding: 0.8rem;
