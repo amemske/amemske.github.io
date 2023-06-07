@@ -1,111 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Latest compiled and minified CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+    <!--=== fontaswesome ===-->
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/fontawesome.min.css">
 
-    <title>Amemske Github Profile</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
-<main>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<script>
+    function smoothScroll(event) {
+        event.preventDefault();
+        const targetDiv = document.querySelector(event.target.getAttribute('href'));
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+
+</script>
+<div class="bg-homeBg min-h-screen dark:bg-color-990 bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+    <div class="z-50">
         <div class="container">
-          <a class="navbar-brand" href="#">AMN</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse top-menu" id="navbarColor01">
-              <div class="float-end">
-            <ul class="navbar-nav mr-auto ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="experience.html">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contacts</a>
-              </li>
-            </ul>
-        </div>
-          </div>
-        </div>
-      </nav>
-<section>
+            <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+                <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black">
+                    <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
+                        <!-- website logo -->
+                        <a class="text-5xl font-semibold" href="/">
+                            <img class="h-[292px] lg:h-[51px]" src="assets/images/logo.png" alt="logo">
+                        </a>
+                        <div class="flex items-center">
+                            <!-- light and dark mode button -->
+                            <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
+                                <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>
+                                <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl"></i>
 
-    
-        <div class="container">
-            <div class="row align-items-lg-center hero">
-        <div class="col-md-12 order-md-1 col-lg-12 text-left">
-          <h4>Hi, my name is</h4>
-          <h1 class="mb-3">Antony Nganga</h1>
-          <p class="lead mb-4">
-            I'm a software engineer specializing in building and sometimes
-            designing outstanding digital experiences. Please take a look at some of my work.
-          <div class="d-flex flex-column flex-md-row">
-            <a href="projects.html" class="btn btn-lg btn-outline-danger mb-3">View Projects</a>
-          </div>
-          
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col">
+                            </button>
+                            <!-- mobile toggle button -->
+                            <button id="menu-toggle" type="button" class="menu-toggle-btn">
+                                <i id="menu-toggle-open-icon" class="fa-solid fa-bars text-xl "></i>
+                                <i id="menu-toggle-close-icon" class="fa-solid fa-xmark text-xl hidden  "></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Front End</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">React</li>
-                <li class="list-group-item">VueJs</li>
-                <li class="list-group-item">Handlebars/EJS</li>
-                <li class="list-group-item">HTML/CSS/SASS</li>
-                <li class="list-group-item">Tailwind CSS</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Backend</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">NodeJs</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">PHP</li>
-                <li class="list-group-item">SQL</li>
-                <li class="list-group-item">Linux</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Tools</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Barbel</li>
-                <li class="list-group-item">git</li>
-                <li class="list-group-item">Docker</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+                <!-- header items two for large screens -->
+                <nav class="hidden lg:block">
+                    <ul class="flex my-12">
 
-      
+                        <li>
+                            <a class="menu-item-two-active" href="#about" onclick="smoothScroll(event)">
+                                    <span class="mr-2 text-base">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span> About </a>
+                        </li>
+
+                        <li>
+                            <a class="menu-item-two" href="#portfolio" onclick="smoothScroll(event)">
+                                    <span class="mr-2 text-base">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span> Portfolio </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+                <!-- mobile menu start -->
+                <nav id="navbar" class="hidden lg:hidden">
+                    <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+
+                        <li>
+                            <a class="mobile-menu-items-active" href="#about" onclick="smoothScroll(event)">
+                                    <span class="mr-2 text-xl">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span> Home </a>
+                        </li>
+
+                        <li>
+                            <a class="mobile-menu-items" href="#portfolio" onclick="smoothScroll(event)">
+                                    <span class="mr-2 text-xl">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span> Portfolio </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- mobile menu end -->
+            </header>
+
+            <div>
+                <div class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-20">
+                    <div data-aos="fade" class="aos-init aos-animate">
+                        <section id="about">
+                        <div id="" class="py-12">
+                            <!-- about page title -->
+                            <h2 class="after-effect after:left-52 mt-12 lg:mt-0"> About Me </h2>
+                            <div class="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-top">
+                                <div class="col-span-12 md:col-span-2">
+                                    <!-- about me image -->
+                                    <img class="w-full md:w-[330px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0" src="assets/images/amemske.jpg" alt="about image">
+                                </div>
+                                <div class="col-span-12 md:col-span-10 space-y-2.5">
+                                    <!-- who am i content  -->
+                                    <div class="md:mr-12 xl:mr-16">
+
+                                        <p class="text-gray-lite dark:text-color-910 leading-7">
+                                            "Hi there! I'm a passionate web developer with expertise in  Drupal, Laravel, and Guzzle.
+                                            With a strong foundation in backend development, I also have hands-on experience with front-end frameworks like React and Vue.js.
+
+                                        </p>
+                                        <p class="text-gray-lite leading-7 mt-2.5 dark:text-color-910">I specialize in transforming complex problems into elegant
+                                            and user-friendly web solutions that bring your message and brand identity to life.  Let's collaborate and create something amazing together—reach out and let's bring your web projects to life in the most creative and effective way possible.</p>
+                                    </div>
+
+                                    <!-- personal info -->
+                                    <div>
+                                        <h3 class="text-4xl font-medium my-5 dark:text-white"> Contacts </h3>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                            <div class="flex">
+
+                                                <div class="space-y-1">
+                                                    <p class="text-xs text-gray-lite dark:text-color-910"> Phone
+                                                    </p>
+                                                    <h6 class="font-medium dark:text-white"> +254 727 781090 </h6>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="flex">
+
+                                                <div class="space-y-1">
+                                                    <p class="text-xs text-gray-lite dark:text-color-910"> Email
+                                                    </p>
+                                                    <h6 class="font-medium dark:text-white"> antonymemia@gmail.com </h6>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- whai i do contain -->
+                        <div class="pb-12">
+                            <h3 class="text-[35px] dark:text-white font-medium pb-5"> Skills </h3>
+                            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                                <div class="about-box dark:bg-transparent bg-[#fcf4ff]">
+
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Drupal </h3>
+                                    </div>
+                                </div>
+
+                                <div class="about-box dark:bg-transparent bg-[#fefaf0]">
+
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Laravel </h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="about-box dark:bg-transparent bg-[#fcf4ff]">
+
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Guzzle </h3>
+
+                                    </div>
+                                </div>
+
+                                <div class="about-box dark:bg-transparent bg-[#fff4f4]">
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Nodejs </h3>
+
+                                    </div>
+                                </div>
+
+                                <div class="about-box dark:bg-transparent bg-[#fff0f8]">
+
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Vuejs </h3>
+
+                                    </div>
+                                </div>
+
+                                <div class="about-box dark:bg-transparent bg-[#f3faff]">
+
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-2xl font-semibold"> Reactjs </h3>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </section>
+                        <!-- what i do contain end -->
+                        <section id="portfolio">
+                        <div class="py-5">
+                            <h2 class="after-effect after:left-48 mt-12 lg:mt-0">Portfolio</h2>
+
+                        </div>
+                        <div class="pb-12">
+
+                            <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[30px] grid gap-x-10 gap-y-7 mb-6">
+
+                                <!-- blog items one start -->
+
+                                <div class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex1" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/leatherlux.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>PHP</span>
+                                        <span class="dot-icon">Laravel</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex1" rel="modal:open">LeatherLux</a>
+                                    </h3>
+                                </div>
+                                <!-- blog items one end -->
+
+                                <!-- blog items two start -->
+                                <div class="p-5 rounded-lg mb-2 h-full bg-[#eefbff] dark:bg-transparent dark:border-[#212425] dark:border-2">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex2" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/fitness_pulse.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>PHP</span>
+                                        <span class="dot-icon">Laravel</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex2" rel="modal:open"> Fitness Pulse </a>
+                                    </h3>
+                                </div>
+                                <!-- blog items two end  -->
+
+                                <!-- blog items three start -->
+                                <div class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2 bg-[#fcf4ff] dark:bg-transparent">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex3" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/maseno.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>PHP</span>
+                                        <span class="dot-icon">Drupal</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex3" rel="modal:open">Maseno University </a>
+                                    </h3>
+                                </div>
+                                <!-- blog items three end -->
+
+                                <!-- blog items four  start -->
+                                <div class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] bg-[#fcf4ff] dark:bg-transparent dark:border-2">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex4" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/recipe.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>Php</span>
+                                        <span class="dot-icon">Guzzle</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex4" rel="modal:open">RecipeFinder API</a>
+                                    </h3>
+                                </div>
+                                <!-- blog items four  end -->
+
+                                <!-- blog items five  start -->
+                                <div class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] bg-[#fcf4ff] dark:bg-transparent dark:border-2">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex5" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/destination_diaries.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>PHP</span>
+                                        <span class="dot-icon">Laravel</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex5" rel="modal:open">Destination Diaries</a>
+                                    </h3>
+                                </div>
+                                <!-- blog items five   end -->
+
+
+
+                            </div>
+                        </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- footer section start -->
+            <footer class="overflow-hidden rounded-b-2xl" style="background: transparent;">
+                <p class="text-center py-6 text-gray-lite dark:text-color-910"> © 2023 All Rights Reserved  </footer>
+            <!-- footer section end -->
+        </div>
     </div>
-</section>
+</div>
 
-</main>
-    
 </body>
 </html>
