@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <style>
+.portfolio-image {
+    max-height: 202px;
+    object-fit: cover;
+}
+    </style>
     <script>
         function smoothScroll(event) {
             event.preventDefault();
@@ -104,28 +110,17 @@
                                     <!-- about page title -->
                                     <h2 class="after-effect after:left-52 mt-12 lg:mt-0"> About Me </h2>
                                     <div class="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-top">
-                                        <div class="col-span-12 md:col-span-2">
-                                            <!-- about me image -->
-                                            <img class="w-full md:w-[330px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0"
-                                                src="assets/images/amemske.jpg" alt="about image">
-                                        </div>
-                                        <div class="col-span-12 md:col-span-10 space-y-2.5">
+                                        
+                                        <div class="col-span-12 md:col-span-12 space-y-2.5">
                                             <!-- who am i content  -->
                                             <div class="md:mr-12 xl:mr-16">
 
                                                 <p class="text-gray-lite dark:text-grey leading-7">
-                                                    "Hi there! I'm a passionate web developer with expertise in Drupal,
-                                                    Laravel, and Guzzle.
-                                                    I also have hands-on experience with front-end frameworks like React
-                                                    and Vue.js.
+                                                    Hey! I'm a passionate web developer with a strong background in Node.js 
+                                                    and Laravel for the back end.<br> I've also have hands on front-end technologies, working with frameworks like React and Vue.js.
 
                                                 </p>
-                                                <p class="text-gray-lite leading-7 mt-2.5 dark:text-grey">I specialize
-                                                    in transforming complex ideas into elegant
-                                                    and user-friendly web solutions that bring your message and brand
-                                                    identity to life. Let's collaborate and create something amazing
-                                                    together—reach out and let's bring your web projects to life in the
-                                                    most creative and effective way possible.</p>
+                                                <p class="text-gray-lite leading-7 mt-2.5 dark:text-grey">If you're looking for a dedicated web developer to help bring your vision to life, please don't hesitate to reach out.<br> I'm eager to contribute to your team and projects.</p>
                                             </div>
 
                                             <!-- personal info -->
@@ -191,7 +186,7 @@
 
                                                     <div class="text-left ml-2.5">
 
-                                                        <p class="dark:text-white">Typescript</p>
+                                                        <p class="dark:text-white">Angular</p>
                                                     </div>
                                                 </div>
 
@@ -208,7 +203,7 @@
 
                                                     <div class="text-left ml-2.5">
 
-                                                        <p class="dark:text-white">PHP</p>
+                                                        <p class="dark:text-white">Nodejs/Express</p>
                                                     </div>
                                                 </div>
                                                 <div
@@ -216,14 +211,14 @@
 
                                                     <div class="text-left ml-2.5">
 
-                                                        <p class="dark:text-white">Python</p>
+                                                        <p class="dark:text-white">Laravel</p>
                                                     </div>
                                                 </div>
                                                 <div class="border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
 
                                                     <div class="text-left ml-2.5">
 
-                                                        <p class="dark:text-white">Nodejs</p>
+                                                        <p class="dark:text-white">Python/Flask</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -234,20 +229,17 @@
 
                                             <div class="space-y-2">
                                                 <h3 class="dark:text-white text-2xl font-semibold">
-                                                    Platforms </h3>
+                                                    Mobile App Development </h3>
                                                 <div
                                                     class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
                                                     <div class="text-left ml-2.5">
 
-                                                        <p class="dark:text-white">Firebase</p>
+                                                        <p class="dark:text-white">React Native</p>
                                                     </div>
                                                 </div>
-                                                <div class="border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
-                                                <div class="text-left ml-2.5">
-
-                                                    <p class="dark:text-white">Amazon Web Services</p>
-                                                </div>
-                                            </div>
+                                             
+                                                 
+                                                 
                                             </div>
 
                                         </div>
@@ -271,7 +263,7 @@
                             <div class="pb-12">
 
                                 <div
-                                    class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[30px] grid gap-x-10 gap-y-7 mb-6">
+                                    class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-[30px] grid gap-x-10 gap-y-7 mb-6">
 
                                     <!-- blog items one start -->
 
@@ -279,130 +271,107 @@
                                         class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
                                         <div class="overflow-hidden rounded-lg">
                                             <a href="#ex1" rel="modal:open">
-                                                <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/leatherlux.jpg" alt="blog image">
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                                    src="assets/images/cookwell.avif" alt="blog image">
                                             </a>
                                         </div>
                                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
-                                            <span>PHP</span>
-                                            <span class="dot-icon">Laravel</span>
+                                            <span>Nodejs</span>
+                                            <span class="dot-icon">Express</span>
+                                           
                                         </div>
                                         <h3
                                             class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
-                                            <a href="#ex1" rel="modal:open">LeatherLux</a>
+                                            <a href="#ex1" rel="modal:open">Cookwell API</a>
 
                                         </h3>
                                         <p class=" dark:text-grey">
-                                            An e-commerce site for selling <br>high-quality leather products.
-                                            Users can easily browse the extensive product catalog, add items to their
-                                            cart, and
-                                            securely complete their purchases.
+                                            Cookwell is a community-driven recipe-sharing website that connects food enthusiasts from around the world. It provides a platform for users to discover, create, and share recipes, cooking tips, and culinary experiences..
                                         </p>
                                     </div>
                                     <!-- blog items one end -->
 
-                                    <!-- blog items two start -->
+                                    <!-- blog items one start -->
+
+                                    <div
+                                        class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
+                                        <div class="overflow-hidden rounded-lg">
+                                            <a href="#ex1" rel="modal:open">
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                                    src="assets/images/cookwell.avif" alt="blog image">
+                                            </a>
+                                        </div>
+                                        <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                            <span>Nodejs</span>
+                                            <span class="dot-icon">Express</span>
+                                            <span class="dot-icon">React</span>
+                                        </div>
+                                        <h3
+                                            class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
+                                            <a href="#ex1" rel="modal:open">Cookwell Web App</a>
+
+                                        </h3>
+                                        <p class=" dark:text-grey">
+                                            Cookwell is a community-driven recipe-sharing website that connects food enthusiasts from around the world. It provides a platform for users to discover, create, and share recipes, cooking tips, and culinary experiences..
+                                        </p>
+                                    </div>
+                                    <!-- blog items one end -->
+
+                                    <!-- blog items two start
                                     <div
                                         class="p-5 rounded-lg mb-2 h-full bg-[#eefbff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
                                         <div class="overflow-hidden rounded-lg">
                                             <a href="#ex2" rel="modal:open">
-                                                <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/fitness_pulse.jpg" alt="blog image">
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                                    src="assets/images/jamaa.avif" alt="blog image" height="202px">
                                             </a>
                                         </div>
                                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
-                                            <span>PHP</span>
-                                            <span class="dot-icon">Laravel</span>
+                                            <span>Nodejs</span>
+                                            <span class="dot-icon">Express</span>
                                         </div>
                                         <h3
                                             class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
-                                            <a href="#ex2" rel="modal:open"> Fitness Pulse </a>
+                                            <a href="#ex2" rel="modal:open"> Jamaa API </a>
                                         </h3>
                                         <p class="dark:text-grey">
-                                            A Laravel-based fitness application designed to help users track their
-                                            health and fitness progress.
-                                            This application provides features such as workout tracking, goal setting,
-                                            nutrition monitoring, and personalized recommendations.
+                                            Jamaa is a classifieds platform that facilitates the buying and selling of various items and services.
+                                            The platform primarily serves as a space for users to connect with sellers, obtain contact information, and negotiate deals directly. 
                                         </p>
-                                    </div>
+                                    </div>-->
                                     <!-- blog items two end  -->
 
-                                    <!-- blog items three start -->
+                                    <!-- blog items three start
                                     <div
                                         class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2 bg-[#fcf4ff] dark:bg-transparent box-container">
                                         <div class="overflow-hidden rounded-lg">
                                             <a href="#ex3" rel="modal:open">
-                                                <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
                                                     src="assets/images/maseno.jpg" alt="blog image">
                                             </a>
                                         </div>
                                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
-                                            <span>PHP</span>
-                                            <span class="dot-icon">Drupal</span>
+                                            <span>Laravel</span>
+                                            <span class="dot-icon">React</span>
                                         </div>
                                         <h3
                                             class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
-                                            <a href="#ex3" rel="modal:open">Maseno University </a>
+                                            <a href="#ex3" rel="modal:open">Someni Web App</a>
 
                                         </h3>
                                         <p class="dark:text-grey">
-                                            An online platform created using Drupal, the website provides a centralized
-                                            hub for students,
-                                            faculty, and visitors to access essential information and engage with the
-                                            university community.
-                                            It features the latest news, announcements, and events happening on campus.
+                                            Someni is a comprehensive primary school quiz platform designed to enhance the learning experience for students and provide valuable insights to teachers.
+                                             It allows students to engage in educational quizzes while enabling teachers to monitor progress and identify areas for improvement.
                                         </p>
-                                    </div>
+                                    </div> -->
                                     <!-- blog items three end -->
 
                                     <!-- blog items four  start -->
-                                    <div
-                                        class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] bg-[#fcf4ff] dark:bg-transparent dark:border-2 box-container">
-                                        <div class="overflow-hidden rounded-lg">
-                                            <a href="#ex4" rel="modal:open">
-                                                <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/recipe.jpg" alt="blog image">
-                                            </a>
-                                        </div>
-                                        <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
-                                            <span>Php</span>
-                                            <span class="dot-icon">Guzzle</span>
-                                        </div>
-                                        <h3
-                                            class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
-                                            <a href="#ex4" rel="modal:open">RecipeFinder API</a>
-                                        </h3>
-                                        <p class="dark:text-grey">
-                                            A robust API developed using Guzzle, a PHP HTTP client library. This API
-                                            allows developers to integrate recipe search functionalities into their
-                                            applications.
-                                        </p>
-                                    </div>
+                                    
                                     <!-- blog items four  end -->
 
                                     <!-- blog items five  start -->
-                                    <div
-                                        class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] bg-[#fcf4ff] dark:bg-transparent dark:border-2 box-container">
-                                        <div class="overflow-hidden rounded-lg">
-                                            <a href="#ex5" rel="modal:open">
-                                                <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/destination_diaries.jpg" alt="blog image">
-                                            </a>
-                                        </div>
-                                        <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
-                                            <span>PHP</span>
-                                            <span class="dot-icon">Laravel</span>
-                                        </div>
-                                        <h3
-                                            class="text-lg font-bold dark:text-white durat ion-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
-                                            <a href="#ex5" rel="modal:open">Destination Diaries</a>
-                                        </h3>
-                                        <p class="dark:text-grey">
-                                            A travel journal platform where users can share their travel experiences,
-                                            upload photos, and document their adventures.
-                                            The site also includes features such as interactive maps, and user profiles.
-                                        </p>
-                                    </div>
+                                    
                                     <!-- blog items five   end -->
 
 
