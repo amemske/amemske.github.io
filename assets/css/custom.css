@@ -348,3 +348,30 @@ input:-webkit-autofill:focus {
         overflow: hidden;
     }
 }
+
+.dark .about-box {
+    border-width: 0;
+    background: #1a1a1b !important;
+    padding: 1.5rem;
+}
+
+header {
+    border-bottom: 1px solid #6e6e6e47;
+}
+
+.after-effect {
+    font-size: 2rem;
+}
+
+.dark .dark\:bg-color-990 {
+    --tw-bg-opacity: 1;
+    background-color: #111111;
+}
+
+.after-effect::after{
+    display: none;
+}
+
+.text-xs {
+    font-size: .85rem;
+}

@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-
-<head>
+<html lang="en" class="dark"><head>
     <meta charset="UTF-8">
     <title>Amemske Portfolio</title>
     <!--=== fontaswesome ===-->
@@ -12,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body>
+<body cz-shortcut-listen="true" style="">
     <style>
 .portfolio-image {
     max-height: 202px;
@@ -30,9 +27,10 @@
     <div class="bg-homeBg min-h-screen dark:bg-color-990 bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
         <div class="z-50">
             <div class="container">
-                <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
-                    <div
-                        class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black">
+                <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111] header ">
+
+    <div class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-0 flex">
+                    <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black">
                         <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                             <!-- website logo -->
                             <a class="text-5xl font-semibold" href="/">
@@ -40,8 +38,7 @@
                             </a>
                             <div class="flex items-center">
                                 <!-- light and dark mode button -->
-                                <button id="theme-toggle-mobile" type="button"
-                                    class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
+                                <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
                                     <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>
                                     <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl"></i>
 
@@ -60,7 +57,7 @@
                         <ul class="flex my-12">
 
                             <li>
-                                <a class="menu-item-two-active" href="#about" onclick="smoothScroll(event)">
+                                <a class="menu-item-two" href="#about" onclick="smoothScroll(event)">
                                     <span class="mr-2 text-base">
                                         <i class="fa-regular fa-user"></i>
                                     </span> About </a>
@@ -79,8 +76,7 @@
 
                     <!-- mobile menu start -->
                     <nav id="navbar" class="hidden lg:hidden">
-                        <ul
-                            class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+                        <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
 
                             <li>
                                 <a class="mobile-menu-items-active" href="#about" onclick="smoothScroll(event)">
@@ -100,16 +96,17 @@
                         </ul>
                     </nav>
                     <!-- mobile menu end -->
+    </div>
                 </header>
 
                 <div>
-                    <div class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-20">
+                    <div class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-0 lg:px-0">
                         <div data-aos="fade" class="aos-init aos-animate">
                             <section id="about">
-                                <div id="" class="py-12">
+                                <div id="" class="py-10">
                                     <!-- about page title -->
                                     <h2 class="after-effect after:left-52 mt-12 lg:mt-0"> About Me </h2>
-                                    <div class="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-top">
+                                    <div class="grid grid-cols-12 md:gap-10 pt-4  items-top">
                                         
                                         <div class="col-span-12 md:col-span-12 space-y-2.5">
                                             <!-- who am i content  -->
@@ -125,8 +122,8 @@
 
                                             <!-- personal info -->
                                             <div>
-                                                <h3 class="text-4xl font-medium my-5 dark:text-white"> Contacts </h3>
-                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                                
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                                                     <div class="flex">
 
                                                         <div class="space-y-1">
@@ -160,22 +157,20 @@
                                 <div class="pb-12">
                                     <h2 class="after-effect after:left-48 mt-12 lg:mt-0 pb-5"> Skills </h2>
                                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                                        <div class="about-box dark:bg-transparent bg-[#fcf4ff]">
+                                        <div class="about-box dark:bg-transparent bg-[#fcf4ff] px-3">
 
                                             <div class="space-y-2">
                                                 <h3 class="dark:text-white text-2xl font-semibold  pb-2.5"> Front End
                                                     Development </h3>
 
-                                                <div
-                                                    class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
 
                                                     <div class="text-left ml-2.5">
 
                                                         <p class="dark:text-white">Reactjs</p>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
 
                                                     <div class="text-left ml-2.5">
 
@@ -196,18 +191,16 @@
                                         <div class="about-box dark:bg-transparent bg-[#fefaf0]">
 
                                             <div class="space-y-2">
-                                                <h3 class="dark:text-white text-2xl font-semibold"> Back-end Development
+                                                <h3 class="dark:text-white text-2xl font-semibold pb-2.5"> Back-end Development
                                                 </h3>
-                                                <div
-                                                    class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
 
                                                     <div class="text-left ml-2.5">
 
                                                         <p class="dark:text-white">Nodejs/Express</p>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
 
                                                     <div class="text-left ml-2.5">
 
@@ -228,10 +221,9 @@
                                         <div class="about-box dark:bg-transparent bg-[#fcf4ff]">
 
                                             <div class="space-y-2">
-                                                <h3 class="dark:text-white text-2xl font-semibold">
+                                                <h3 class="dark:text-white text-2xl font-semibold pb-2.5">
                                                     Mobile App Development </h3>
-                                                <div
-                                                    class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
                                                     <div class="text-left ml-2.5">
 
                                                         <p class="dark:text-white">React Native</p>
@@ -251,28 +243,25 @@
 
 
                                 </div>
-                        </div>
+                        </section></div>
 
-                        </section>
+                        
                         <!-- what i do contain end -->
                         <section id="portfolio">
-                            <div class="pt-5">
+                            <div class="pt-3">
                                 <h2 class="after-effect after:left-48 mt-12 lg:mt-0">Portfolio</h2>
 
                             </div>
                             <div class="pb-12">
 
-                                <div
-                                    class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-[30px] grid gap-x-10 gap-y-7 mb-6">
+                                <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 grid gap-x-10 gap-y-7 mb-6">
 
                                     <!-- blog items one start -->
 
-                                    <div
-                                        class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
+                                    <div class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
                                         <div class="overflow-hidden rounded-lg">
                                             <a href="#ex1" rel="modal:open">
-                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/cookwell.avif" alt="blog image">
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/cookwell.avif" alt="blog image">
                                             </a>
                                         </div>
                                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
@@ -281,8 +270,7 @@
                                             <span class="dot-icon">Express</span>
                                            
                                         </div>
-                                        <h3
-                                            class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
+                                        <h3 class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
                                             <a href="#ex1" rel="modal:open">Cookwell API</a>
 
                                         </h3>
@@ -294,12 +282,10 @@
 
                                     <!-- blog items one start -->
 
-                                    <div
-                                        class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
+                                    <div class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2 box-container">
                                         <div class="overflow-hidden rounded-lg">
                                             <a href="#ex1" rel="modal:open">
-                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                                    src="assets/images/cookwell.avif" alt="blog image">
+                                                <img class=" portfolio-image rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="assets/images/cookwell.avif" alt="blog image">
                                             </a>
                                         </div>
                                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
@@ -308,8 +294,7 @@
                                             <span class="dot-icon">Express</span>
                                             <span class="dot-icon">React</span>
                                         </div>
-                                        <h3
-                                            class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
+                                        <h3 class="text-lg font-bold dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252] pb-2">
                                             <a href="#ex1" rel="modal:open">Cookwell Web App</a>
 
                                         </h3>
@@ -388,12 +373,12 @@
             <!-- footer section start -->
             <footer class="overflow-hidden rounded-b-2xl" style="background: transparent;">
                 <p class="text-center py-6 text-gray-lite dark:text-color-910"> © 2023 All Rights Reserved
-            </footer>
+            </p></footer>
             <!-- footer section end -->
         </div>
     </div>
-    </div>
+    
 
-</body>
 
-</html>
+
+</body></html>
